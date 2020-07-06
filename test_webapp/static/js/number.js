@@ -10,11 +10,11 @@ $(".button1").on("click", function (e){
         console.log("data:" + data)
         console.log("status" + status)
         //加算
-        for (let i = 0; i < data.length; i++){
-            $(".button1").prop("value", data[i]);
+        $(".button1").val(data);
+        $(".button1").text(data);
         }
 
-    })
+    )
     })
 
 $(".button2").on("click", function (e){
@@ -29,8 +29,8 @@ $(".button2").on("click", function (e){
         console.log("data:" + data)
         console.log("status" + status)
         //加算
-        for (let i = 0; i < data.length; i++){
-            $(".button2").prop("value", data[i]);
+        $(".button2").val(data);
+        $(".button2").text(data);
         }
-    })
+    )
     })
