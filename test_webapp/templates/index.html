@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>入力フォーム　ローカルゴリラ</h1>
+
+<form action = "output/" method = "GET">
+<h3>ゴリラGET通信</h3>
+<p><input type="text" name="url_get_text" size="50" minlength="1" maxlength="1000"　required  placeholder="入力してくださいウホウホウホ"></p>
+<p><input class="button" type="submit" value="GET通信でoutputページを開くゴリ"></p>
+</form>
+
+<form action = "output/" method = "POST">
+<h3>ゴリラPOST通信</h3>
+<p><input type="text" name="url_post_text" size="50" minlength="1" maxlength="1000"　required  placeholder="入力してくださいウホウホウホ"></p>
+<p><input class="button" type="submit" value="POST通信でoutputページを開くゴリ"></p>
+</form>
+{% endblock %}
