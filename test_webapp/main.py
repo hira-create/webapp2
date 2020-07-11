@@ -9,7 +9,7 @@ from flask import request
 app = Flask(__name__)
 
 BASE_DIR = pathlib.Path(__file__).parent
-
+#----------------------------------------------------
 # GET メソッドのWEB API
 @app.route("/get_number/<key>", methods=["GET"])
 def sum_number(key):
@@ -19,7 +19,7 @@ def sum_number(key):
 @app.route("/number")
 def number():
     return render_template("button.html")
-#----------------------------------------------------#
+#----------------------------------------------------
 
 # 入力スタート
 @app.route('/')

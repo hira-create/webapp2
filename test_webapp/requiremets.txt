@@ -1,4 +1,6 @@
 Flask
-PyMySQL
-virtualenv
-virtualenvwrapper
+BoTorch==0.3.0
+Psychopy
+PyQt5
+torch==1.5.1
+torchvision==0.6.1
