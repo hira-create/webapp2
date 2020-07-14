@@ -1,11 +1,9 @@
 import os
 import glob
 import random
-import setting
+from .. import setting
 import torch
-import ego from ego.stimulation.shape
-import random_gallery
-import acquisition_gallery, image_create_ellipse_fourier
+from .ego.stimulation import shape
 
 # キャンディの画像のパスのリストを返す関数
 # 引数は個数、返り値はリスト型
@@ -23,8 +21,8 @@ def sum_number(number):
     return number + 1
 
 
-def shiroshita_system()
-    count_num = 1
+def shiroshita_system():
+    count_num:int = 1
     LOOP_NUM = 100
     RANDOM_NUM = 80
     bounds = torch.Tensor([[-1, -0.5, -0.25, -0.125, -1, -0.5, -0.25, -0.125], [1, 0.5, 0.25, 0.125, 1, 0.5, 0.25, 0.125]])
