@@ -4,7 +4,7 @@ import random
 import pathlib
 import sys
 import torch
-DIR = pathlib.Path(__file__)
+DIR = pathlib.Path(os.path.abspath(__file__))
 sys.path.append(DIR.parents[2])
 from test_webapp import setting
 from test_webapp.modules.ego.stimulation import shape
