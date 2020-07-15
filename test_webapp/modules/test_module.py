@@ -1,8 +1,12 @@
 import os
 import glob
 import random
-from test_webapp import setting
+import pathlib
+import sys
 import torch
+DIR = pathlib.Path(__file__)
+sys.path.append(DIR.parents[2])
+from test_webapp import setting
 from test_webapp.modules.ego.stimulation import shape
 
 
@@ -95,4 +99,6 @@ def s_system(input_array: list):
 
 
 if __name__ == '__main__':
-    s_system([1, 1])
+    # s_system([1, 1])
+    for i in sys.path:
+        print(i)
